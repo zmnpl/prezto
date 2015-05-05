@@ -11,3 +11,55 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+
+# automatic stuff after config...
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+# End of lines configured by zsh-newuser-install
+# The following lines were added by compinstall
+zstyle :compinstall filename '/home/simon/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+# #############################################################
+
+# colors
+#autoload -U colors && colors
+# prompt
+#autoload -U promptinit
+#promptinit
+#prompt elite2
+#PROMPT="%{$fg[red]%}%n%{$reset_color%}@%{$fg[blue]%}%m %{$fg_no_bold[yellow]%}%1~ %{$reset_color%}%#"
+#RPROMPT="[%{$fg_no_bold[yellow]%}%?%{$reset_color%}]"
+# fish-like syntax highlighting
+#source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+########################################################################
+#
+
+# golang
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+export EDITOR=vim
+
+# android sdk
+export PATH=$PATH:$HOME/workspace/android-sdk-linux/platform-tools
+
+# own scripts path
+export PATH=$PATH:~/CloudStation/Linux/scripts
+
+# alias xflock4='light-locker-command -l'
+alias xflock4='sxlock'
+alias whatsinaur='pacman -Qqm'
+alias fotosnap='sudo rsnapshot -v daily'
+alias fucking-reboot='sudo shutdown -r now'
+alias fuckoff='sudo shutdown -h now'
+# pacman aliases
+alias kick='sudo pacman -Rns'
+# yaourt aliases
+alias aurupdate='yaourt -Syua --devel'
+
+#/home/simon/CloudStation/Linux_Setup/scripts/bash_pacman.sh
+screenfetch
