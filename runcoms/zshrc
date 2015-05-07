@@ -40,8 +40,8 @@ compinit
 #
 
 # zsh options
-setopt EXTENDED_GLOB
-
+setopt extenden_glob
+set -o shwordsplit
 # golang
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
