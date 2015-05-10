@@ -40,7 +40,7 @@ compinit
 #
 
 # zsh options
-setopt extenden_glob
+setopt extended_glob
 set -o shwordsplit
 # golang
 export GOPATH=$HOME/go
