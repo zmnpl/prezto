@@ -64,5 +64,8 @@ alias kick='sudo pacman -Rns'
 # yaourt aliases
 alias aurupdate='yaourt -Syua --devel'
 
+# ssh aliases
+source ~/CloudStation/Linux/ssh_alias.zsh
+
 #/home/simon/CloudStation/Linux_Setup/scripts/bash_pacman.sh
 screenfetch
