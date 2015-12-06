@@ -64,6 +64,8 @@ alias fuckoff='sudo shutdown -h now'
 alias kick='sudo pacman -Rns'
 # yaourt aliases
 alias aurupdate='yaourt -Syua --devel'
+# urxvt
+alias urxvtoptions="urxvt --help 2>&1| sed -n '/:  /s/^ */! URxvt*/gp'"
 
 # ssh aliases
 source ~/CloudStation/Linux/ssh_alias.zsh
