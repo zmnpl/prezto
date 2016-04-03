@@ -52,7 +52,7 @@ export EDITOR=vim
 export PATH=$PATH:$HOME/workspace/android-sdk-linux/platform-tools
 
 # own scripts path
-export PATH=$PATH:~/CloudStation/Linux/scripts
+export PATH=$PATH:~/CloudStation/Linux/linuxhelper
 
 # alias xflock4='light-locker-command -l'
 alias xflock4='sxlock'
@@ -67,6 +67,8 @@ alias kick='sudo pacman -Rns'
 alias aurupdate='yaourt -Syua --devel'
 # urxvt
 alias urxvtoptions="urxvt --help 2>&1| sed -n '/:  /s/^ */! URxvt*/gp'"
+# steam temporary
+alias steam="__GLVND_DISALLOW_PATCHING=1 steam"
 
 # ssh aliases
 source ~/CloudStation/Linux/ssh_alias.zsh
