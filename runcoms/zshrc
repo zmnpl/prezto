@@ -54,6 +54,9 @@ export PATH=$PATH:$HOME/workspace/android-sdk-linux/platform-tools
 # own scripts path
 export PATH=$PATH:~/CloudStation/Linux/linuxhelper
 
+# pico-8
+export PATH=$PATH:~/CloudStation/Linux/pico-8
+
 # alias xflock4='light-locker-command -l'
 alias xflock4='sxlock'
 alias whatsinaur='pacman -Qqm'
